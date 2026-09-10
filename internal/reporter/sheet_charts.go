@@ -104,8 +104,8 @@ func (r *ExcelReporter) buildChartsSheet(f *excelize.File, sheet string, stats m
 		r := i + 2
 		f.SetCellValue(sheet, fmt.Sprintf("AD%d", r), item.Key)
 		f.SetCellValue(sheet, fmt.Sprintf("AE%d", r), item.Val)
-		f.SetCellStyle(sheet, fmt.Sprintf("AD%d", r), cellLeft)
-		f.SetCellStyle(sheet, fmt.Sprintf("AE%d", r), cellRight)
+		f.SetCellStyle(sheet, fmt.Sprintf("AD%d", r), fmt.Sprintf("AD%d", r), cellLeft)
+		f.SetCellStyle(sheet, fmt.Sprintf("AE%d", r), fmt.Sprintf("AE%d", r), cellRight)
 	}
 
 	maxFieldRow := len(errList) + 1
@@ -151,8 +151,8 @@ func (r *ExcelReporter) buildChartsSheet(f *excelize.File, sheet string, stats m
 		stat := stats.DepartmentStats[d]
 		f.SetCellValue(sheet, fmt.Sprintf("AG%d", dRow), stat.Department)
 		f.SetCellValue(sheet, fmt.Sprintf("AH%d", dRow), stat.ErrorRate)
-		f.SetCellStyle(sheet, fmt.Sprintf("AG%d", dRow), cellLeft)
-		f.SetCellStyle(sheet, fmt.Sprintf("AH%d", dRow), cellRight)
+		f.SetCellStyle(sheet, fmt.Sprintf("AG%d", dRow), fmt.Sprintf("AG%d", dRow), cellLeft)
+		f.SetCellStyle(sheet, fmt.Sprintf("AH%d", dRow), fmt.Sprintf("AH%d", dRow), cellRight)
 		dRow++
 	}
 	maxDeptRow := dRow - 1

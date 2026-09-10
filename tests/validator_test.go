@@ -13,8 +13,9 @@ func TestIsValidSSN(t *testing.T) {
 		ssn      string
 		expected bool
 	}{
-		{"123-45-6789", true},
-		{"452881920", true},
+		{"452-88-1920", true},
+		{"554128874", true},
+		{"123-45-6789", false}, // dummy sequential series
 		{"000-12-3456", false}, // 000 area
 		{"666-45-7890", false}, // 666 area
 		{"999-99-9999", false}, // 999 area / dummy
