@@ -1,0 +1,9 @@
+employee_id,first_name,last_name,ssn,department,employment_status,hire_date,monthly_hours,monthly_gross_pay,coverage_offer_code,safe_harbor_code,employee_contribution
+EMP101,Alexander,Hamilton,452-11-2233,Finance,Full-Time,2020-01-15,160.0,7500.00,1E,2C,110.00
+EMP102,Elizabeth,Schuyler,554-22-3344,Operations,Full-Time,2021-03-01,168.0,6800.00,1A,2F,95.00
+EMP103,Aaron,Burr,656-33-4455,Legal,Full-Time,2019-06-15,160.0,8500.00,1E,2C,125.00
+EMP104,Angelica,Schuyler,758-44-5566,Marketing,Full-Time,2021-08-20,160.0,7200.00,1E,2C,115.00
+EMP105,John,Laurens,860-55-6677,Field Operations,Part-Time,2022-02-10,80.0,3200.00,1H,2B,0.00
+EMP106,Marquis,Lafayette,962-66-7788,International,Full-Time,2018-09-01,170.0,9000.00,1E,2C,130.00
+EMP107,Hercules,Mulligan,164-77-8899,Logistics,Full-Time,2020-11-15,165.0,6200.00,1A,2F,85.00
+EMP108,George,Washington,266-88-9900,Executive,Full-Time,2015-04-30,160.0,15000.00,1E,2C,150.00
